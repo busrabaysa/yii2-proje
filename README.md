@@ -58,11 +58,11 @@ Kurulum (Installation)
 Proje kök klasöründe çalıştırın:
 
 ```
-php composer rumeysaustun / yii2-hospital "@dev" gerektirir
+php composer busrabaysa / yii2-hospital "@dev" gerektirir
 ```
 
 ```
-php yii migrate / up --migrationPath = vendor / rumeysaustun / yii2-hospital / migrations
+php yii migrate / up --migrationPath = vendor / busrabaysa / yii2-hospital / migrations
 ```
 
 
@@ -109,21 +109,21 @@ Widget'lar
 Doktor formu widget'ını kullanabilirsiniz:
 
 ```
-<? = rumeysaustun \ hospital \ widgets \ DoctorForm :: widget (['pjax' => true]); ?>
+<? = busrabaysa \ hospital \ widgets \ DoctorForm :: widget (['pjax' => true]); ?>
 ```
 
 
 Hasta formu widget'ını kullanabilirsiniz:
 
 ```
-<? = rumeysaustun \ hospital \ widgets \ PatientForm :: widget (['pjax' => true]); ?>
+<? = busrabaysa \ hospital \ widgets \ PatientForm :: widget (['pjax' => true]); ?>
 ```
 
 Eylem (action) formu widget'ını kullanabilirsiniz (hasta modelini parametrelere göndermeniz gerekir):
 
 ```
-<? = rumeysaustun \ hospital \ widgets \ ActionForm :: widget ([
+<? = busrabaysa \ hospital \ widgets \ ActionForm :: widget ([
     'pjax' => true,
-    'patient' => rumeysaustun \ hospital \ models \ PatientForm :: findOne (1),
+    'patient' => busrabaysa \ hospital \ models \ PatientForm :: findOne (1),
 ]); ?>
 ```
